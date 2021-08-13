@@ -22,7 +22,7 @@ export const AddForm = (props) => {
             props.setError("Name, position and nickname fields are required.")
         }
         else{
-            props.addSmurf(state)
+            props.addSmurf({...state, id: Date.now()})
         }
     }
 
